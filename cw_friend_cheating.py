@@ -11,6 +11,7 @@
 ##[(a, b), ...] or [[a, b], ...] or {{a, b}, ...} or or [{a, b}, ...]
 ##with all (a, b)which are the possible removed numbers in the
 ##sequence 1 to n.
+##unfortunately, this works for small numbers as i couldnt figure out a more efficient way, and codewars wouldnt accept my solution :/
 
 
 def removNb(n):
