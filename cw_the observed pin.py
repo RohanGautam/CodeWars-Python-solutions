@@ -1,4 +1,3 @@
-#<4 kyu>#
 import itertools
 def get_pins(pin):
     adjacent = {
@@ -13,11 +12,5 @@ def get_pins(pin):
         '9': ['6', '8'],
         '0': ['8'],
     }
-
     L=[[digit]+adjacent[digit] for digit in pin]
-    ans=list(itertools.product(*L))
-    ans=[''.join(ele) for ele in ans]
-    return ans
-        
-
-
+    return [''.join(ele) for ele in list(itertools.product(*L))]
